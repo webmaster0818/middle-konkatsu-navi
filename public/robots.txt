@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://middle-konkatsu-navi.com/sitemap.xml

@@ -1,4 +1,7 @@
+import Link from "next/link";
 import agencies from "../data/agencies.json";
+import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
 
 export default function Home() {
   const top3 = agencies.filter((a) => a.rank <= 3);
@@ -8,39 +11,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Header */}
-      <header className="bg-surface border-b border-border sticky top-0 z-50 shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-2xl" aria-hidden="true">
-              💜
-            </span>
-            <h1 className="text-xl md:text-2xl font-bold text-primary">
-              ミドル世代婚活ナビ
-            </h1>
-          </div>
-          <nav className="hidden md:flex gap-6 text-sm font-medium text-muted">
-            <a href="#ranking" className="hover:text-primary transition-colors">
-              おすすめランキング
-            </a>
-            <a href="#price" className="hover:text-primary transition-colors">
-              料金比較
-            </a>
-            <a
-              href="#remarriage"
-              className="hover:text-primary transition-colors"
-            >
-              再婚向け
-            </a>
-            <a href="#howto" className="hover:text-primary transition-colors">
-              選び方
-            </a>
-            <a href="#faq" className="hover:text-primary transition-colors">
-              FAQ
-            </a>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main className="flex-1">
         {/* Hero */}
@@ -134,8 +105,8 @@ export default function Home() {
               あなたの状況に合った相談所を探す
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a
-                href="#ranking"
+              <Link
+                href="/age/40s/"
                 className="group block bg-surface rounded-2xl p-8 border-2 border-border hover:border-primary transition-all shadow-sm hover:shadow-md text-center"
               >
                 <span
@@ -152,9 +123,9 @@ export default function Home() {
                   <br />
                   婚活戦略と相談所選び
                 </p>
-              </a>
-              <a
-                href="#ranking"
+              </Link>
+              <Link
+                href="/age/50s/"
                 className="group block bg-surface rounded-2xl p-8 border-2 border-border hover:border-primary transition-all shadow-sm hover:shadow-md text-center"
               >
                 <span
@@ -171,9 +142,9 @@ export default function Home() {
                   <br />
                   50代に強い相談所を厳選
                 </p>
-              </a>
-              <a
-                href="#remarriage"
+              </Link>
+              <Link
+                href="/remarriage/recommended/"
                 className="group block bg-surface rounded-2xl p-8 border-2 border-border hover:border-accent transition-all shadow-sm hover:shadow-md text-center"
               >
                 <span
@@ -190,7 +161,7 @@ export default function Home() {
                   <br />
                   再婚に強い相談所を紹介
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -745,6 +716,128 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Internal Links Hub */}
+        <section className="py-16 px-4 bg-surface">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold">
+                詳しく知りたい方へ
+              </h2>
+              <p className="text-muted mt-3">年代・状況に合わせた詳細ガイドをご覧ください</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Age Guides */}
+              <div className="bg-purple-50 rounded-2xl border border-purple-200 p-6">
+                <h3 className="font-bold text-foreground mb-4 flex items-center gap-2">
+                  <span className="text-2xl">📅</span>
+                  年代別おすすめランキング
+                </h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/age/40s/" className="text-sm text-primary hover:underline">
+                      40代向けおすすめ結婚相談所ランキング
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/age/50s/" className="text-sm text-primary hover:underline">
+                      50代向けおすすめ結婚相談所ランキング
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/age/60s/" className="text-sm text-primary hover:underline">
+                      60代向けおすすめ結婚相談所ランキング
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* Remarriage Guides */}
+              <div className="bg-pink-50 rounded-2xl border border-pink-200 p-6">
+                <h3 className="font-bold text-foreground mb-4 flex items-center gap-2">
+                  <span className="text-2xl">💕</span>
+                  再婚・バツイチ特集
+                </h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/remarriage/recommended/" className="text-sm text-primary hover:underline">
+                      再婚向けおすすめ結婚相談所ランキング
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/remarriage/reality/" className="text-sm text-primary hover:underline">
+                      バツイチ婚活の現実と成功のコツ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/remarriage/with-children/" className="text-sm text-primary hover:underline">
+                      子持ち再婚の進め方ガイド
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/remarriage/introduce-partner/" className="text-sm text-primary hover:underline">
+                      子供へのパートナー紹介方法
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/remarriage/single-parent/" className="text-sm text-primary hover:underline">
+                      シングルマザー・ファザーの婚活
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* Strategy Guides */}
+              <div className="bg-purple-50 rounded-2xl border border-purple-200 p-6">
+                <h3 className="font-bold text-foreground mb-4 flex items-center gap-2">
+                  <span className="text-2xl">🎯</span>
+                  婚活戦略ガイド
+                </h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/strategy/men-40s/" className="text-sm text-primary hover:underline">
+                      40代男性の婚活戦略
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/strategy/women-40s/" className="text-sm text-primary hover:underline">
+                      40代女性の婚活戦略
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/strategy/men-50s/" className="text-sm text-primary hover:underline">
+                      50代男性の婚活戦略
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/strategy/women-50s/" className="text-sm text-primary hover:underline">
+                      50代女性の婚活戦略
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/strategy/age-gap/" className="text-sm text-primary hover:underline">
+                      年の差婚のリアル
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Agency Detail Links */}
+            <div className="mt-8 bg-background rounded-2xl border border-border p-6">
+              <h3 className="font-bold text-foreground mb-4">結婚相談所 個別詳細ページ</h3>
+              <div className="flex flex-wrap gap-3">
+                {agencies.map((agency) => (
+                  <Link
+                    key={agency.slug}
+                    href={`/agency/${agency.slug}/`}
+                    className="text-sm bg-surface border border-border text-primary px-3 py-1.5 rounded-lg hover:bg-purple-50 hover:border-primary transition-all"
+                  >
+                    {agency.name}の評判・料金
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-16 px-4 bg-gradient-to-br from-purple-100 via-pink-50 to-purple-50">
           <div className="max-w-3xl mx-auto text-center">
@@ -765,75 +858,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-foreground text-white py-12 px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl" aria-hidden="true">
-                  💜
-                </span>
-                <p className="font-bold text-lg">ミドル世代婚活ナビ</p>
-              </div>
-              <p className="text-sm text-gray-400 leading-relaxed">
-                40代・50代・再婚の方に特化した
-                <br />
-                結婚相談所おすすめ比較サイト
-              </p>
-            </div>
-            <div>
-              <p className="font-bold mb-3">コンテンツ</p>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <a href="#ranking" className="hover:text-white transition-colors">
-                    おすすめランキング
-                  </a>
-                </li>
-                <li>
-                  <a href="#price" className="hover:text-white transition-colors">
-                    料金比較表
-                  </a>
-                </li>
-                <li>
-                  <a href="#remarriage" className="hover:text-white transition-colors">
-                    再婚向け相談所
-                  </a>
-                </li>
-                <li>
-                  <a href="#howto" className="hover:text-white transition-colors">
-                    選び方ガイド
-                  </a>
-                </li>
-                <li>
-                  <a href="#faq" className="hover:text-white transition-colors">
-                    よくある質問
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-bold mb-3">運営情報</p>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>運営: 株式会社MediaX</li>
-                <li>所在地: 東京都渋谷区</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-700 pt-6">
-            <p className="text-xs text-gray-500 text-center leading-relaxed">
-              ※当サイトに掲載している情報は、各結婚相談所の公式サイトおよび公開情報に基づいています。
-              料金・サービス内容は変更される場合がありますので、最新情報は各社公式サイトにてご確認ください。
-              <br />
-              ※当サイトにはアフィリエイトリンクが含まれる場合があります。
-            </p>
-            <p className="text-xs text-gray-500 text-center mt-4">
-              &copy; 2026 ミドル世代婚活ナビ All rights reserved. 運営:
-              株式会社MediaX
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
