@@ -33,14 +33,20 @@ export default function SiteHeader() {
           <Link href="/age/50s/" className="hover:text-primary transition-colors">
             50代
           </Link>
-          <Link href="/age/60s/" className="hover:text-primary transition-colors">
-            60代
-          </Link>
           <Link href="/remarriage/recommended/" className="hover:text-primary transition-colors">
             再婚
           </Link>
-          <Link href="/#price" className="hover:text-primary transition-colors">
-            料金比較
+          <Link href="/worry/too-late-40s/" className="hover:text-primary transition-colors">
+            お悩み相談
+          </Link>
+          <Link href="/knowhow/profile-photo/" className="hover:text-primary transition-colors">
+            婚活ノウハウ
+          </Link>
+          <Link href="/compare/musubel-vs-zwei/" className="hover:text-primary transition-colors">
+            比較
+          </Link>
+          <Link href="/article/first-marriage-40s/" className="hover:text-primary transition-colors">
+            コラム
           </Link>
         </nav>
 
@@ -80,6 +86,10 @@ export default function SiteHeader() {
               { href: "/remarriage/recommended/", label: "再婚・バツイチ向け" },
               { href: "/strategy/men-40s/", label: "男性の婚活戦略" },
               { href: "/strategy/women-40s/", label: "女性の婚活戦略" },
+              { href: "/worry/too-late-40s/", label: "お悩み相談" },
+              { href: "/knowhow/profile-photo/", label: "婚活ノウハウ" },
+              { href: "/compare/musubel-vs-zwei/", label: "比較ランキング" },
+              { href: "/article/first-marriage-40s/", label: "コラム" },
               { href: "/#price", label: "料金比較" },
               { href: "/#faq", label: "よくある質問" },
             ].map((item) => (

@@ -129,4 +129,137 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Worry pages (6 pages) -->
+  <url>
+    <loc>https://middle-konkatsu-navi.com/worry/too-late-40s/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/worry/reality-50s/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/worry/embarrassing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/worry/bad-people/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/worry/success-rate-truth/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/worry/burnout/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Knowhow pages (5 pages) -->
+  <url>
+    <loc>https://middle-konkatsu-navi.com/knowhow/profile-photo/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/knowhow/omiai-success/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/knowhow/from-dating-to-marriage/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/knowhow/cost-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/knowhow/online-vs-offline/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Compare pages (5 pages) -->
+  <url>
+    <loc>https://middle-konkatsu-navi.com/compare/musubel-vs-zwei/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/compare/online-vs-store/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/compare/price-ranking/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/compare/support-ranking/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/compare/success-rate-ranking/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article pages (9 pages) -->
+  <url>
+    <loc>https://middle-konkatsu-navi.com/article/first-marriage-40s/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/article/income-requirement/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/article/appearance-concern/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/article/children-issue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/article/dating-app-vs-agency/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/article/regional-konkatsu/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/article/second-life-partner/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/article/parents-concern/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://middle-konkatsu-navi.com/article/international-marriage/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

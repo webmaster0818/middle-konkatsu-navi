@@ -19,37 +19,57 @@ export default function SiteFooter() {
             </p>
           </div>
 
-          {/* Age Rankings */}
+          {/* Age Rankings & Remarriage */}
           <div>
             <h3 className="text-sm font-bold text-white mb-3 border-b border-gray-700 pb-2">年代別ランキング</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <ul className="space-y-2 text-sm text-gray-400 mb-4">
               <li><Link href="/age/40s/" className="hover:text-white transition-colors">40代向けおすすめ結婚相談所</Link></li>
               <li><Link href="/age/50s/" className="hover:text-white transition-colors">50代向けおすすめ結婚相談所</Link></li>
               <li><Link href="/age/60s/" className="hover:text-white transition-colors">60代向けおすすめ結婚相談所</Link></li>
             </ul>
-          </div>
-
-          {/* Remarriage */}
-          <div>
             <h3 className="text-sm font-bold text-white mb-3 border-b border-gray-700 pb-2">再婚・バツイチ特集</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><Link href="/remarriage/recommended/" className="hover:text-white transition-colors">再婚向けおすすめ結婚相談所</Link></li>
-              <li><Link href="/remarriage/reality/" className="hover:text-white transition-colors">バツイチ婚活の現実と成功のコツ</Link></li>
-              <li><Link href="/remarriage/with-children/" className="hover:text-white transition-colors">子持ち再婚の進め方ガイド</Link></li>
-              <li><Link href="/remarriage/introduce-partner/" className="hover:text-white transition-colors">子供へのパートナー紹介方法</Link></li>
+              <li><Link href="/remarriage/reality/" className="hover:text-white transition-colors">バツイチ婚活の現実</Link></li>
+              <li><Link href="/remarriage/with-children/" className="hover:text-white transition-colors">子持ち再婚の進め方</Link></li>
               <li><Link href="/remarriage/single-parent/" className="hover:text-white transition-colors">シングルマザー・ファザーの婚活</Link></li>
             </ul>
           </div>
 
-          {/* Strategy */}
+          {/* Worry & Knowhow */}
           <div>
-            <h3 className="text-sm font-bold text-white mb-3 border-b border-gray-700 pb-2">婚活戦略ガイド</h3>
+            <h3 className="text-sm font-bold text-white mb-3 border-b border-gray-700 pb-2">お悩み相談</h3>
+            <ul className="space-y-2 text-sm text-gray-400 mb-4">
+              <li><Link href="/worry/too-late-40s/" className="hover:text-white transition-colors">40代の婚活は手遅れ？</Link></li>
+              <li><Link href="/worry/reality-50s/" className="hover:text-white transition-colors">50代婚活の現実</Link></li>
+              <li><Link href="/worry/embarrassing/" className="hover:text-white transition-colors">結婚相談所は恥ずかしい？</Link></li>
+              <li><Link href="/worry/success-rate-truth/" className="hover:text-white transition-colors">成婚率のカラクリ</Link></li>
+              <li><Link href="/worry/burnout/" className="hover:text-white transition-colors">婚活疲れの対処法</Link></li>
+            </ul>
+            <h3 className="text-sm font-bold text-white mb-3 border-b border-gray-700 pb-2">婚活ノウハウ</h3>
             <ul className="space-y-2 text-sm text-gray-400">
+              <li><Link href="/knowhow/profile-photo/" className="hover:text-white transition-colors">プロフィール写真のコツ</Link></li>
+              <li><Link href="/knowhow/omiai-success/" className="hover:text-white transition-colors">お見合い成功のポイント</Link></li>
+              <li><Link href="/knowhow/cost-guide/" className="hover:text-white transition-colors">婚活の費用相場</Link></li>
+            </ul>
+          </div>
+
+          {/* Compare & Articles */}
+          <div>
+            <h3 className="text-sm font-bold text-white mb-3 border-b border-gray-700 pb-2">比較ランキング</h3>
+            <ul className="space-y-2 text-sm text-gray-400 mb-4">
+              <li><Link href="/compare/musubel-vs-zwei/" className="hover:text-white transition-colors">ムスベル vs ツヴァイ比較</Link></li>
+              <li><Link href="/compare/price-ranking/" className="hover:text-white transition-colors">料金比較ランキング</Link></li>
+              <li><Link href="/compare/support-ranking/" className="hover:text-white transition-colors">サポート品質ランキング</Link></li>
+              <li><Link href="/compare/success-rate-ranking/" className="hover:text-white transition-colors">成婚率ランキング</Link></li>
+            </ul>
+            <h3 className="text-sm font-bold text-white mb-3 border-b border-gray-700 pb-2">コラム</h3>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li><Link href="/article/first-marriage-40s/" className="hover:text-white transition-colors">40代初婚は珍しい？</Link></li>
+              <li><Link href="/article/dating-app-vs-agency/" className="hover:text-white transition-colors">アプリ vs 相談所比較</Link></li>
+              <li><Link href="/article/second-life-partner/" className="hover:text-white transition-colors">セカンドライフのパートナー探し</Link></li>
               <li><Link href="/strategy/men-40s/" className="hover:text-white transition-colors">40代男性の婚活戦略</Link></li>
               <li><Link href="/strategy/women-40s/" className="hover:text-white transition-colors">40代女性の婚活戦略</Link></li>
-              <li><Link href="/strategy/men-50s/" className="hover:text-white transition-colors">50代男性の婚活戦略</Link></li>
-              <li><Link href="/strategy/women-50s/" className="hover:text-white transition-colors">50代女性の婚活戦略</Link></li>
-              <li><Link href="/strategy/age-gap/" className="hover:text-white transition-colors">年の差婚のリアル</Link></li>
             </ul>
           </div>
         </div>
